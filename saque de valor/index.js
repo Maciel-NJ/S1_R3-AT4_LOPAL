@@ -1,14 +1,14 @@
 
-let saldo = 100; // Define o saldo inicial da conta, pode trocar esse valor por qualquer outro
+let saldo = 100; // define o saldo inicial da conta, vc pode trocar esse valor por qualquer outro
 
 
-while (saldo > 0) {   // Enquanto houver saldo positivo, permite saques
+while (saldo > 0) {   // enquanto houver saldo positivo, os saques irão ser permitidos
   
   let saque = parseFloat(prompt("Seu saldo é R$ " + saldo + ". Digite o valor do saque:"));  // Mostra o saldo atual e pede o valor do saque
 
   
-  if (saque <= saldo && saque > 0) {     // Verifica se o saque é possível
-    saldo = saldo - saque; // Atualiza o saldo
+  if (saque <= saldo && saque > 0) {     // verifica se é possível sacar o dinheiro
+    saldo = saldo - saque; // atualiza o saldo atual
     alert("Saque realizado com sucesso! Novo saldo: R$ " + saldo);
   } else {
     alert("Valor inválido ou maior que o saldo. Tente novamente.");
@@ -16,4 +16,4 @@ while (saldo > 0) {   // Enquanto houver saldo positivo, permite saques
 }
 
 
-alert("Saldo esgotado. Não é possível continuar.");   // Quando o saldo chega a 0 ou menos, exibe mensagem final
+alert("Saldo esgotado. Não é possível continuar.");   // quando o saldo chega a 0 ou menos, esta mensagem irá aparecer
